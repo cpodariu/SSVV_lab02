@@ -44,14 +44,14 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidDuplicateIdStudentTest() {
+	public void addStudentWithDuplicateId() {
 		Student s = new Student("1", "Catalin", 936, "catalin@mail.com", "Dorinel");
 		studentService.add(s);
 		assert (!studentService.find("1").getNume().equals(s.getNume()));
 	}
 
 	@Test
-	public void addInvalidIdStudentTest() {
+	public void addStudentWithInvalidId() {
 		Student s = new Student(null, "Catalin", 936, "catalin@mail.com", "Dorinel");
 		try {
 			studentService.add(s);
@@ -61,7 +61,7 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidGroupStudentTest() {
+	public void addStudentWithInvalidGroup() {
 		Student s = new Student("2", "Catalin", -1, "catalin@mail.com", "Dorinel");
 		try {
 			studentService.add(s);
@@ -71,7 +71,7 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidEmailStudentTest() {
+	public void addStudentWithInvalidEmail() {
 		Student s = new Student("2", "Catalin", 936, "catalin.com", "Dorinel");
 		try {
 			studentService.add(s);
@@ -81,7 +81,7 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidNameStudentTest() {
+	public void addStudentWithInvalidName() {
 		Student s = new Student("2", "][][][][", 936, "catalin@abc.com", "Dorinel");
 		try {
 			studentService.add(s);
@@ -91,7 +91,7 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidProfNameStudentTest() {
+	public void addStudentWithInvalidProfName() {
 		Student s = new Student("2", "Catalin", 936, "catalin@abc.com", "[]][][][]");
 		try {
 			studentService.add(s);
