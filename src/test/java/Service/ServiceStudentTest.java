@@ -44,10 +44,15 @@ public class ServiceStudentTest {
 	}
 
 	@Test
-	public void addInvalidStudent() {
+	public void addInvalidDuplicateIdStudentTest() {
+		Student s = new Student("1", "Catalin", 936, "catalin@mail.com", "Dorinel");
+		studentService.add(s);
+		assert (!studentService.find("1").getNume().equals(s.getNume()));
+	}
 
-		Student s = new Student("1", "Catalin", 936, "aaa", "Dorinel");
-
+	@Test
+	public void addInvalidIdStudentTest() {
+		Student s = new Student(null, "Catalin", 936, "catalin@mail.com", "Dorinel");
 		try {
 			studentService.add(s);
 			assert (false);
@@ -55,4 +60,43 @@ public class ServiceStudentTest {
 		}
 	}
 
+	@Test
+	public void addInvalidGroupStudentTest() {
+		Student s = new Student("2", "Catalin", -1, "catalin@mail.com", "Dorinel");
+		try {
+			studentService.add(s);
+			assert (false);
+		} catch (ValidationException ignored) {
+		}
+	}
+
+	@Test
+	public void addInvalidEmailStudentTest() {
+		Student s = new Student("2", "Catalin", 936, "catalin.com", "Dorinel");
+		try {
+			studentService.add(s);
+			assert (false);
+		} catch (ValidationException ignored) {
+		}
+	}
+
+	@Test
+	public void addInvalidNameStudentTest() {
+		Student s = new Student("2", "][][][][", 936, "catalin@abc.com", "Dorinel");
+		try {
+			studentService.add(s);
+			assert (false);
+		} catch (ValidationException ignored) {
+		}
+	}
+
+	@Test
+	public void addInvalidProfNameStudentTest() {
+		Student s = new Student("2", "Catalin", 936, "catalin@abc.com", "[]][][][]");
+		try {
+			studentService.add(s);
+			assert (false);
+		} catch (ValidationException ignored) {
+		}
+	}
 }
