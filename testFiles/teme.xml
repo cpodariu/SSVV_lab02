@@ -5,4 +5,9 @@
         <deadline>10</deadline>
         <sapt_primire>10</sapt_primire>
     </Tema>
+    <Tema nr="2">
+        <descriere>asdsadas</descriere>
+        <deadline>5</deadline>
+        <sapt_primire>3</sapt_primire>
+    </Tema>
 </Teme>

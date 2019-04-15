@@ -35,7 +35,7 @@ public class ServiceAssignmentTest {
 
 	@Test
 	public void addValidAssignment() {
-		Teme t = new Teme(2, "da-te peste cap", 3, 5);
+		Teme t = new Teme(2, "asdsadas", 3, 5);
 
 		assignmentService.add(t);
 
@@ -52,7 +52,48 @@ public class ServiceAssignmentTest {
 			assignmentService.add(t);
 			assert (false);
 		} catch (Exception e) {
+			assert (true);
+		}
 
+		Teme t2 = new Teme(2, "asdsadas", 3, 5);
+		try {
+			assignmentService.add(t2);
+			assert (true);
+		} catch (Exception e) {
+			assert (false);
+		}
+	}
+
+	@Test
+	public void addInvalidIdAssignment() {
+		Teme t2 = new Teme(-1, "asdsadas", 3, 5);
+		try {
+			assignmentService.add(t2);
+			assert (false);
+		} catch (Exception e) {
+			assert (true);
+		}
+	}
+
+	@Test
+	public void addInvalidDeadlineAssignment() {
+		Teme t2 = new Teme(2, "asdsadas", 3, -1);
+		try {
+			assignmentService.add(t2);
+			assert (false);
+		} catch (Exception e) {
+			assert (true);
+		}
+	}
+
+	@Test
+	public void addInvalidWeekAssignment() {
+		Teme t2 = new Teme(2, "asdsadas", -1, 5);
+		try {
+			assignmentService.add(t2);
+			assert (false);
+		} catch (Exception e) {
+			assert (true);
 		}
 	}
 }
