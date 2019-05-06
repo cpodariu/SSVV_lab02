@@ -73,6 +73,14 @@ public class ServiceAssignmentTest {
 		} catch (Exception e) {
 			assert (true);
 		}
+
+		Teme t3 = new Teme(2, "asdsadas", 3, 5);
+		try {
+			assignmentService.add(t3);
+			assert (true);
+		} catch (Exception e) {
+			assert (false);
+		}
 	}
 
 	@Test
@@ -84,6 +92,14 @@ public class ServiceAssignmentTest {
 		} catch (Exception e) {
 			assert (true);
 		}
+
+		Teme t3 = new Teme(2, "asdsadas", 3, 6);
+		try {
+			assignmentService.add(t3);
+			assert (true);
+		} catch (Exception e) {
+			assert (false);
+		}
 	}
 
 	@Test
@@ -94,6 +110,14 @@ public class ServiceAssignmentTest {
 			assert (false);
 		} catch (Exception e) {
 			assert (true);
+		}
+
+		Teme t3 = new Teme(2, "asdsadas", 3, 5);
+		try {
+			assignmentService.add(t3);
+			assert (true);
+		} catch (Exception e) {
+			assert (false);
 		}
 	}
 }

@@ -6,4 +6,10 @@
         <mail>dorinel@vagabontu.com</mail>
         <profesor>Catalin</profesor>
     </Student>
+    <Student idStudent="2">
+        <nume>Catalin</nume>
+        <grupa>936</grupa>
+        <mail>catalin@mail.com</mail>
+        <profesor>Dorinel</profesor>
+    </Student>
 </inbox>

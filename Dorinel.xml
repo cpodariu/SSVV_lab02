@@ -1,64 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Note>
     <Nota idNota="11">
-        <nume>Roman Ionut</nume>
-        <nr>1</nr>
-        <valoare>5.0</valoare>
-    </Nota>
-</Note>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Note>
-    <Nota idNota="21">
-        <nume>Gorea Andra</nume>
-        <nr>1</nr>
-        <valoare>5.0</valoare>
-    </Nota>
-</Note>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Note>
-    <Nota idNota="11">
-        <nume>Dori</nume>
-        <nr>1</nr>
-        <valoare>1.0</valoare>
-    </Nota>
-</Note>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Note>
-    <Nota idNota="11">
-        <nume>Dorinel</nume>
         <nr>1</nr>
         <valoare>9.0</valoare>
+        <predat>7</predat>
+        <deadline>10</deadline>
+        <feedback>mai invata</feedback>
     </Nota>
 </Note>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Note>
     <Nota idNota="11">
-        <nume>Dorinel</nume>
         <nr>1</nr>
         <valoare>9.0</valoare>
+        <predat>7</predat>
+        <deadline>10</deadline>
+        <feedback>mai invata</feedback>
     </Nota>
 </Note>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Note>
     <Nota idNota="11">
-        <nume>Dorinel</nume>
         <nr>1</nr>
         <valoare>9.0</valoare>
+        <predat>7</predat>
+        <deadline>10</deadline>
+        <feedback>mai invata</feedback>
     </Nota>
 </Note>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Note>
     <Nota idNota="11">
-        <nume>Dorinel</nume>
         <nr>1</nr>
         <valoare>9.0</valoare>
+        <predat>7</predat>
+        <deadline>10</deadline>
+        <feedback>mai invata</feedback>
     </Nota>
 </Note>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Note>
     <Nota idNota="11">
-        <nume>Dorinel</nume>
         <nr>1</nr>
         <valoare>9.0</valoare>
+        <predat>7</predat>
+        <deadline>10</deadline>
+        <feedback>mai invata</feedback>
     </Nota>
 </Note>
